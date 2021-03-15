@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.navig_top {
+    background-color: #333;
+    overflow: hidden
+}
+
+.navig_top > a{
+    float:left;
+    text-align: center;
+    padding: 12px 22px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+}
+@media screen and (max-width: 450px) {
+    .navig_top > a {font-size: 12px; padding: 8px 19px;}
+}
+
+
+.navig_top > a:hover {
+    background-color: #34e5eb;
+    color: #000
+}
+
+
+.navig_left {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;   
+    top: 0;
+    left: 0;
+}
+
+.navig_left a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none; 
+}
+
+
+.navig_left a:hover, .dropdown-btn:hover {
+    color: #34e5eb;
+}
+
+.active {
+    color: #ffffff;
+}
+
+.dropdown-container {
+    display:none;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-left: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .navig_left {padding-top: 15px;}
+    .navig_left a {font-size: 18px;}
+  }
+
+  .main{
+    margin-left: 200px; /* Same as the width of the sidenav */
+    /* font-size: 28px; Increased text to enable scrolling */
+    padding-left: 10px;
+  }
+
+  .parent{
+      font-weight: bold;
+  }
+
+  #category_img {
+    /* Prevent vertical gaps */
+    line-height: 0;
+  
+    -webkit-column-count: 2;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    2;
+    -moz-column-gap:      0px;
+    column-count:         2;
+    column-gap:           0px;
+  
+  }
+
+  
+  #category_img img{
+      width: 100% !important;
+      height: auto !important;
+  }
+
+  #wallpapers {
+       /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px;
+}
+  @media screen and (max-width: 990px) {
+    #wallpapers {
+      /* Prevent vertical gaps */
+      line-height: 0;
+
+      -webkit-column-count: 2;
+      -webkit-column-gap:   0px;
+      -moz-column-count:    2;
+      -moz-column-gap:      0px;
+      column-count:         3;
+      column-gap:           0px;
+    }
+
+    .navig_left{
+        display: none;
+      }
+      .main{
+        margin-left: auto; /* Same as the width of the sidenav */
+        /* font-size: 28px; Increased text to enable scrolling */
+        padding-left: 0px;
+      }
+  
+}
+@media screen and (max-width: 400px) {
+    #wallpapers {
+      /* Prevent vertical gaps */
+      line-height: 0;
+
+      -webkit-column-count: 2;
+      -webkit-column-gap:   0px;
+      -moz-column-count:    2;
+      -moz-column-gap:      0px;
+      column-count:         2;
+      column-gap:           0px;
+    }
+    .navig_left{
+      display: none;
+    }
+}
+
+#wallpapers img {
+    width: 100%  !important;
+    height: auto !important;
+    background-size: cover;
+}
+
+/*wallpaper page */
+#wrapper_div {
+    position:relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+#download_btn{
+    position: absolute;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    display: inline;
+    text-align: left;
+    padding-right: 20px;
+    vertical-align: middle;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    display: inline;
+    background: url("./img/download.svg") no-repeat;
+    background-size: contain;;
+    background-position: right;
+    background-color: #FBD786;
+    border-radius: 12px;
+    outline: none;
+}
